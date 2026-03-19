@@ -1,7 +1,7 @@
 # Mi Sitio Web - SENA CEET
 
 Proyecto desarrollado con Next.js, Tailwind CSS y Azure.
-Url: https://mi-sitio-next-js-6177.vercel.app/
+ Url: https://mi-sitio-next-js-6177.vercel.app/
 
 ## Equipo
 - Dev-01
