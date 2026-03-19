@@ -1,15 +1,12 @@
 // lib/data.ts
-// Fuente de datos centralizada. En producción, estos datos
-// vendrían de un CMS (Strapi, Sanity) o base de datos.
+import type { GalleryImageType, BlogPostType } from "@/types";
 
-import type { GalleryImageType, BlogPost, SiteConfig } from "@/types";
-
-export const siteConfig: SiteConfig = {
+export const siteConfig = {
   name: "Mi Sitio Web",
   description: "Galería, blog y contacto - Taller SENA CEET",
-  url: "https://mi-sitio.azurestaticapps.net", // Cambiar por la URL real si la tienen
+  url: "https://mi-sitio.azurestaticapps.net",
   author: "SENA CEET - ADSO",
-  year: new Date().getFullYear(), // Año dinámico
+  year: new Date().getFullYear(),
 };
 
 export const heroImage = {
@@ -20,17 +17,25 @@ export const heroImage = {
 export const galleryImages: GalleryImageType[] = [
   { id: 1, src: "/img/img1.jpg", alt: "Ciudad futurista con luces neón", width: 1024, height: 768 },
   { id: 2, src: "/img/img2.jpg", alt: "Caballo en paisaje brumoso", width: 1024, height: 768 },
-  // ... (agregar las 6 imágenes restantes según su proyecto)
+  { id: 3, src: "/img/img3.jpg", alt: "Imagen 3", width: 1024, height: 768 },
+  { id: 4, src: "/img/img4.jpg", alt: "Imagen 4", width: 1024, height: 768 },
+  { id: 5, src: "/img/img5.jpg", alt: "Imagen 5", width: 1024, height: 768 },
+  { id: 6, src: "/img/img6.jpg", alt: "Imagen 6", width: 1024, height: 768 },
 ];
 
-export const blogPosts: BlogPost[] = [
+export const blogPosts: BlogPostType[] = [
   {
     id: 1,
     slug: "inteligencia-artificial-trabajo",
     title: "IA en el Trabajo",
-    date: "15 de marzo de 2025",
     excerpt: "Cómo la IA transforma los espacios de trabajo...",
-    image: { src: "/img/img7.jpg", alt: "Robot en escritorio" },
+    image: "/img/img7.jpg",
   },
-  // ... (agregar las 3 entradas restantes según su proyecto)
+  {
+    id: 2,
+    slug: "segundo-post",
+    title: "Segundo Post",
+    excerpt: "Resumen del segundo post del blog.",
+    image: "/img/img8.jpg",
+  },
 ];

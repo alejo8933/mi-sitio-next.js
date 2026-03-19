@@ -9,8 +9,8 @@ export type GalleryImageType = {
 
 export type BlogPostType = {
   id: number;
+  slug: string;
   title: string;
   excerpt: string;
   image: string;
-  slug: string;
 };
